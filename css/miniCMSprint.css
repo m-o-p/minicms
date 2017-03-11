@@ -1,0 +1,70 @@
+/**
+ * This file contains the Print Stylesheet. Formattings concerning the printing should be inserted here.
+ *
+ * minicms (C) 2006 Marc-Oliver Pahl
+ * http://minicms.m-o-p.de
+**/
+
+
+body {  
+                      margin: 5px 5px 5px 5px; 
+
+                      font-family: times, serif; 
+                      text-align:  left; 
+}
+
+a {                   color:#003366; text-decoration:underline; }
+a:hover {             color:#CC0000; text-decoration:underline; }
+a:visited {           color:#003366; text-decoration:underline; }
+a:visited:hover {     color:#CC0000; text-decoration:underline; }
+
+  .wsitable{ /* The table containing all stuff; 
+                must be a table to get the menu on the left fullheight;
+                stylesheet div would break below. */
+                      margin: none;
+                      width: 100%;
+                      table-layout: fixed; /* causes the sizes to be fixed (not content related) */
+                      border: none;
+                      padding: 0px;
+                      border-spacing: 0px;
+                      background-color: #ffffff;
+                      text-align: left;
+  }
+  
+  .wsitable .left{ /* 1) fixes the width of the left column;
+                      2) contains the university locator; */
+                      width: 0px; 
+                      display: none;
+  }
+  .wsitable .right{ 
+                      width: 90%;
+                      border: none;
+  }
+  .wsitable .toprow .theRow .uniLogo{
+                      display: none;
+  }
+  .wsitable .toprow .theRow .title{
+                      font-size: 1.2em;
+  }
+  
+  .wsitable .menu{
+                      display: none;
+  }
+  
+  .wsitable .menu .mnu{ /* containing the menu entries */
+                      display: none;
+  }
+  
+  .wsitable .content{ /* containing the body */
+                      border: none;
+                      font-size: 0.8em;
+                      text-align: left;
+                      margin: 0;
+  }
+  .wsitable .bottomRow {
+                      display: none;
+  }
+
+  .wsitable .toprow .theRow .fakultaetsLogo{ 
+                      float: left;
+  }

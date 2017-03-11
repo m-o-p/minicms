@@ -1,0 +1,144 @@
+/**
+ * This file contains the Stylesheet for YOUR CONTENT. You should insert your styles here.
+ *
+ * minicms (C) 2006 Marc-Oliver Pahl
+ * http://minicms.m-o-p.de
+**/
+
+
+
+.wsitable .right{/* 1) fixes the width of the right column;
+                    2) contains the locator inside this page; */
+                    font-size: 0.8em;
+                    color: #eeeeee;
+                    background-color: #00c1b6;
+                    border-left: solid 1px #00c1b6; /* wsi-color dividing line */
+                    border-top: solid 6px #89897c;/* makes the dividing line go into the bg */
+                    padding-left: 1em;
+                    padding-bottom: 1px;
+}
+.wsitable .right a,
+.wsitable .right a:visited {
+                    color: #ffffff;
+}
+
+/* Formate fuer die Kopfzeile */
+.wsitable .toprow{/* The header row with logos title etc. */
+                    background-color: #c6f0ef;
+                    background-image: url('../pix/sand_sitze_endlos_tuerkis.jpg');
+}
+
+.wsitable .toprow .theRow .fakultaetsLogo{ 
+                    width: 100px;
+                    position: relative;
+                    right: 0.5em;
+                    top: 0;
+                    display: inline;
+                    text-align: right;
+                    float: right;
+}
+  
+.wsitable .content{ /* containing the body */
+                    border-left: solid 1px #00c1b6;
+}
+
+.wsitable .menu .mnu ul li a:hover {  
+                    background-color: #00c1b6;
+                    color: #ffffff;
+}  
+/* Umspannt den Rechten unteren Inhaltsteil */
+.contentBox{
+              font-size: 0.8em;
+              text-align: justify;
+              padding: 1em;
+}
+
+.widthlimited{
+              max-width: 550px;
+}
+
+pre{
+              font-size: 1.1em;
+}
+
+/* keine Begrenzung beim Drucken */
+@media print {
+  .widthlimited{
+              max-width: 100%;
+  }
+}
+
+/* Damit de Ueberschriften nach Links ausgerueckt sind, muss der Rest eingerueckt sein */
+.contentBox p, 
+.contentBox div, 
+.contentBox table {
+         margin-left: 20px;
+}
+
+/* zusaetzlich zur Einrueckung sollen die Aufzaehlungseinheiten noch Abstand voneinander haben */
+.content ul li {
+         margin-left: 20px;
+         margin-bottom: 0.5em;
+}
+
+/* Listenelement .word mit dem entsprechenden Icon */
+.content ul .word{ 
+                      list-style: none;
+                      background-image:url('../pix/word_mini.gif');
+                      background-position: left center;
+                      background-repeat: no-repeat;
+                      margin-left: 0px;
+                      padding-left: 22px;
+                      margin-top: 5px;
+                 } 
+/* Listenelement .acrobat mit dem entsprechenden Icon */
+.content ul .acrobat{ 
+                      list-style: none;
+                      background-image: url('../pix/acrobat_mini.gif');
+                      background-position: left center;
+                      background-repeat: no-repeat;
+                      margin-left: 0px;
+                      padding-left: 22px;
+                      margin-top: 5px;
+                    } 
+
+/* Element, dass keinen Abstand nach oben haben soll: id="nomargintop" (1ste Ueberschrift) */
+#nomargintop{
+              margin-top: 0px;
+}
+
+/* Die Ueberschriften */
+.content h1, h2, h3, h4, h5{
+              font-size: 1.2em;
+              text-decoration: none;
+              font-weight: bold;
+              padding: 2px
+}
+
+.content h2{
+              color: #222222;
+              margin-left: 3px;
+}
+
+.content h3{
+              color: #333333;
+              margin-left: 6px;
+}
+
+.content h4{
+              font-size: 1.1em;
+              color: #555555;
+              margin-left: 9px;
+}
+
+/* Unterueberschriften innerhalb des Textes (nicht ausgerueckt). */
+.content h5{
+              font-size: 1.1em;
+              color: #555555;
+              margin-left: 15px;
+}
+.content h6{
+              font-size: 1.1em;
+              color: #666666;
+              margin-left: 20px;
+}

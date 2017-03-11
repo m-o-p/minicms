@@ -1,0 +1,229 @@
+/**
+ * This file contains the System Stylesheet. Your personal new styles do not belong here! See userstyles.css
+ *
+ * minicms (C) 2006 Marc-Oliver Pahl
+ * http://minicms.m-o-p.de
+**/
+
+
+body {  
+                      margin: 5px 5px 5px 5px; 
+                      background-color: #89897c;
+
+                      font-family: verdana, sans-serif; 
+}
+
+a {                   color:#003366; text-decoration:underline; }
+a:hover {             color:#CC0000; text-decoration:underline; }
+a:visited {           color:#003366; text-decoration:underline; }
+a:visited:hover {     color:#CC0000; text-decoration:underline; }
+
+  .wsitable{ /* The table containing all stuff; 
+                must be a table to get the menu on the left fullheight;
+                stylesheet div would break below. */
+                      margin-top: 0.5em;
+                      width: 95%;
+                      table-layout: fixed; /* causes the sizes to be fixed (not content related) */
+                      border: none;
+                      padding: 0px;
+                      border-spacing: 0px;
+                      background-color: #ffffff;
+                      text-align: left;
+  }
+  
+/* Left upmost part */  
+  .wsitable .left{ /* 1) fixes the width of the left column;
+                      2) contains the university locator; */
+                      width: 220px; 
+                      font-size: 0.8em;
+                      background-color: #002b7f;
+                      color: #ffffff;
+                      border-top: solid 6px #89897c; /* makes the dividing line go into the bg */
+                      text-align: right;
+                      padding-right: 1em;
+                      padding-bottom: 1px;
+  }
+  .wsitable .left a,
+  .wsitable .left a:visited {
+                      color: #ffffff;
+                      text-decoration: none;
+  }
+  .wsitable .left a:hover {
+                      text-decoration: underline;
+  }
+  
+/* Right upmost part */
+  .wsitable .right{/* 1) fixes the width of the right column;
+                      2) contains the locator inside this page; */
+                      font-size: 0.8em;
+                      color: #aaaaaa;
+                      background-color: #ffff00;
+                      border-left: solid 1px #ffff00; /* yellow dividing line */
+                      border-top: solid 6px #89897c;/* makes the dividing line go into the bg */
+                      padding-left: 1em;
+                      padding-bottom: 1px;
+  }
+  .wsitable .right a,
+  .wsitable .right a:visited {
+                      color: #333333;
+                      text-decoration: none;
+  }
+  .wsitable .right a:hover {
+                      text-decoration:underline;
+  }
+  
+/* Row with logos, title, etc. */  
+  .wsitable .toprow{/* The header row with logos title etc. */
+                      background-color: #fafdb8;
+                      background-image: url('../pix/sand_sitze_endlos_gelb.jpg');
+  }
+  .wsitable .toprow .theRow{
+                      padding-left: 0.5em;
+                      padding-top: 5px;
+  }
+/* Container for the Uni-Logo */  
+  .wsitable .toprow .theRow .uniLogo{ 
+                      width: 220px;
+                      padding-left: 5px;
+                      display: inline;
+                      float: left;
+  }
+/* Container for the title */
+  .wsitable .toprow .theRow .title{
+                      font-size: 1.7em;
+                      margin-top: 9px;
+                      font-family: Times, Serif; 
+  }
+  
+/* Cell containing the menu */
+  .wsitable .menu{
+                      vertical-align: top;
+                      padding-left: 5px;
+  }
+  .wsitable .menu .mnu{ /* containing the menu entries */
+                      margin-top: 0.8em;
+                      margin-bottom: 1em;
+                      font-size: 0.9em;
+                      text-align: left;
+                      color: #000000;
+                      width: 200px;
+                      margin-left: 10px;
+  }
+  
+  .wsitable .menu .mnu ul {
+                      margin: 0px;
+                      padding: 0px;
+                      list-style-type: none;
+/* Would be it but doen't work with firefox :(
+                      list-style-image: url('pix/listbullet_off.gif');
+                      list-style-position: inside; */
+  }
+  
+  .wsitable .menu .mnu .on{ 
+                      /*list-style-image:url('pix/listbullet_on.gif');*/
+  }
+  
+  /* menu entries */
+    .wsitable .menu .mnu ul li {
+    /* So this workaround is used for the list-bullets: */
+                      margin-bottom: 1px;
+                      background-image:url('../pix/listbullet_off.gif');
+                      background-position: left center;
+                      background-repeat: no-repeat;
+                      padding-left: 9px;
+                      /* background-color: #e0e0e0; */
+    }
+
+    .wsitable .menu .mnu ul .menu_ebene_0 {
+                      margin-top: 0.2em;
+    }
+    .wsitable .menu .mnu ul .menu_ebene_1 {
+                      margin-left: 1em;
+                      font-size: 0.9em;
+                      /* background-color: #e8e8e8; */
+    }
+    .wsitable .menu .mnu ul .menu_ebene_2 {
+                      margin-left: 2em;
+                      font-size: 0.85em;
+                      /* background-color: #efefef; */
+    }
+    .wsitable .menu .mnu ul .menu_ebene_3 {
+                      margin-left: 3em;
+                      font-size: 0.8em;
+                      /* background-color: #f8f8f8; */
+    }
+    .wsitable .menu .mnu ul .menu_ebene_4 {
+                      margin-left: 4em;
+                      font-size: 0.75em;
+                      /* background-color: #ffffff; */
+    }
+
+    
+    .wsitable .menu .mnu ul li a {        
+                                          color: #333333;
+                                          text-decoration: none;
+                                          padding: 1px; 
+                                          padding-left: 7px;
+                                          padding-right: 7px;
+                                          display: block;
+                                          width: 100%;
+    }
+    .wsitable .menu .mnu ul li a:visited {  
+                                          color: #333333;
+                                          text-decoration: none;
+    }
+    .wsitable .menu .mnu ul li a:hover {  
+                                          color: #333333;
+                                          text-decoration: none;
+                                          background-color: #ffff00;
+    }
+    .wsitable .menu .mnu .on li {
+                                          color: #000000;
+                                          font-weight: bold;
+    /* So this workaround is used for the list-bullets: */
+                                          background-image:url('../pix/listbullet_on.gif');
+                                          background-position: left center;
+                                          background-repeat: no-repeat;
+                                          padding-left: 9px;
+    }
+    .wsitable .menu .mnu .on li a {        
+                                          color: #000000;
+                                          text-decoration: none;
+    }
+    .wsitable .menu .mnu .on li a:visited {
+                                          color: #000000;
+                                          text-decoration: none;
+    }
+    .wsitable .menu .mnu .on li a:hover {
+                                          color: #000000;
+                                          text-decoration: none;
+    }
+
+/* Footer row */
+  .wsitable .bottomRow{
+                    font-size: 0.7em;
+                    background-color: #ffffff;
+                    color: #999999;
+                    text-align: right;
+                    padding-right: 1em;
+                    padding-bottom: 3px;
+  }
+  .wsitable .bottomRow a,
+  .wsitable .bottomRow a:visited {
+                      color: #bbbbbb;
+                      text-decoration: none;
+  }
+  .wsitable .bottomRow a:hover {
+                      color: #000000;
+                      text-decoration:underline;
+  }
+  
+  
+/* Cell containing the "body" (right, middle) */  
+  .wsitable .content{
+                      border-left: solid 1px #ffff00;
+                      vertical-align: top;
+                      background: url('../pix/attempto_palme_hell.gif');
+                      background-repeat: no-repeat; 
+                      background-position: right bottom;
+  }

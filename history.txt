@@ -1,0 +1,34 @@
+2010-09-16 ------------------------ v1.4
+index.php, includes/menuLogic.php
+  - set absolute path (useful if someone uses .htaccess with URL rewriting and subdirectories)
+added htaccess
+  - to enable URL rewriting simply rename it to .htaccess (e.g. with "mv htaccess .htaccess")
+  
+2010-09-14 ------------------------ v1.3
+index.php
+  - changed character set to utf-8.
+  - added automatic conversion of the content to utf-8.
+
+  - added support for the plugin:
+      http://kingdesk.com/projects/php-typography/
+    (does hyphenation etc. but makes the system noticable slower)
+menu.inc
+  - at the end of the file you can enable that only the currently
+    active menu shows submenus.
+made changes necessary in
+/include/menuLogic.inc
+/include/menuLogicCloseSubmenus.inc (new)
+
+2010-06-08 ------------------------ v1.2
+index.php
+  - I added the character set in the header and the head to become W3C valid again.
+
+2007-05-11 ------------------------ v1.1
+PHP support in src-files:
+ * By request I added some codelines for those who want to use php-code inside
+ * the source files.
+ * Search for "GET-PHP-SRC-INTERPRETED" in "/index.php" to learn about it.
+ * By default it is DISABLED!
+
+2005-08-31 ------------------------ v1.0
+Version 1.0
